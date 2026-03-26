@@ -419,7 +419,7 @@ std::pair<int, int> InputWindow::update(InputContext *inputContext) {
             if (!realCommentText.empty()) {
                 // Still need some extra space before comment, let's just add a
                 // space and see.
-                commentText = Text(" ");
+                commentText = Text("");
                 commentText.append(realCommentText);
             }
             setTextToMultilineLayout(inputContext,
